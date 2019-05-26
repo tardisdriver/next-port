@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "mckloud_blackregular";
+  src: url("../media/mcklb___-webfont.woff2") format("woff2"),
+    url("../media/mcklb___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  height: 100vh;
+  box-shadow: 5px 9px 15px #c1c0c0;
+}
+
+.nav-base-state {
+  position: absolute;
+  transform: translateX(-400px);
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateX(-350px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+
+.nav-open {
+  position: absolute;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  transform: translateX(-40px);
+}
+
+#nav li {
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger {
+  width: 35px;
+  height: 50px;
+  margin-top: 50px;
+  position: absolute;
+  margin-left: 50px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.line {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  z-index: 100;
+}
+
+.menu-text {
+  font-size: 0.75em;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cascade {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 120px;
+  text-align: left;
+}
+
+.cascade li {
+  font-size: 1.5em;
+  text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
+  display: block;
+  visibility: visible;
+  color: white;
+  z-index: 100;
+  padding: 10px 0;
+  transition: all 1s ease-in-out;
+}
+
+.cascade li:hover {
+  font-family: "mckloud_blackregular";
+  font-size: 1.7em;
+  cursor: pointer;
+}

@@ -2,32 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+/* body {
+  background-image: url("./media/paper-texture-backgroundjpg.jpg");
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html,
+body,
+.container {
+  width: 100%;
+  height: 100vh;
+  min-width: 500px;
+  min-height: 500px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.container {
+  background-color: #007ced;
+  background: linear-gradient(to bottom, #007ced 1%, #cce7ff 100%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#cloud-intro {
+  position: relative;
+  height: 100%;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
+      200px,
+    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px
+      250px;
+  animation: wind 20s linear infinite;
+}
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
   }
 }
