@@ -33,3 +33,31 @@
   border: 1px solid black;
   background-color: white;
 }
+
+#social {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-button {
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+#github {
+  background-color: black;
+}
+
+#linkedin {
+  background-color: #0077b5;
+}
+
+.fab {
+  font-size: 1.2em;
+  padding-right: 10px;
+}

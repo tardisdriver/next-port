@@ -22,6 +22,25 @@ export default class Home extends React.Component {
             Hey there, nice to meet you! I'm a Front End Developer in Dallas,
             TX.
           </h3>
+          <div id="social">
+            <a
+              className="social-button"
+              id="github"
+              href="https://github.com/tardisdriver"
+            >
+              <i className="fab fa-github-square" />
+              GitHub
+            </a>
+            <a
+              className="social-button"
+              id="linkedin"
+              href="https://www.linkedin.com/in/tracy-stark/"
+            >
+              {" "}
+              <i className="fab fa-linkedin" />
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     );
